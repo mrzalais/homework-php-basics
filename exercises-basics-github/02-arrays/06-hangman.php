@@ -15,7 +15,7 @@ $input = 'Y';
 
 while (strtolower($input) == 'y') {
     $word = getWord($words);
-    echo $word;
+
     $tries = 3;
 
     $right = 0;
@@ -97,7 +97,6 @@ function userInput(): string
     $guess = "";
     while (strlen($guess) !== 1) {
         $guess = readline("Guess any letter of the word: \n");
-        //should only accept letters
     }
     return $guess = strtolower($guess);
 }
